@@ -1,0 +1,6 @@
+.container{
+  border: 1px solid black;
+  width: 33rem;
+  max-height: 1300rem;
+  /* color: transparent; */
+}

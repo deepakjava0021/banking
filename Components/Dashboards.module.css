@@ -1,0 +1,51 @@
+
+.logout{
+  width: 45%;
+  height: 45%;
+ margin-left: 40rem;
+
+ 
+}
+
+select{
+  width: 80%;
+  margin-bottom: 10px !important;
+  border-radius: 5px;
+  
+}
+input{
+  width: 80%;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.submit{
+  border-radius: 5px;
+  margin-top: 10px;
+  
+}
+.container{
+  border: 1px solid black;
+  border-radius: 8px;
+  width: 60%;
+  height: 90%;
+  padding: 45px;
+  margin-left: 23%;
+ 
+}
+
+.container:hover{
+  box-shadow: 5px 5px 15px 15px rgba(250, 250, 246, 0.489)
+}
+
+
+.container2{
+  margin-left: -64rem;
+  margin-top: -31rem;
+  width: 20%;
+}
+
+.container2:hover{
+  box-shadow: 5px 5px 15px 15px rgba(250, 250, 246, 0.489)
+
+}
