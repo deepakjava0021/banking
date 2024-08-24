@@ -9,7 +9,8 @@ export default function Cards() {
   let [users, setUsers] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:8080/api/getAll", {
+    // fetch("http://localhost:8080/api/getAll", {
+    fetch("banking-server-production.up.railway.app/api/getAll", {
       method: "GET",
     })
       .then((response) => response.json())

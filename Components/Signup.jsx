@@ -29,7 +29,8 @@ export default function Signup() {
       password: password,
     };
 
-    fetch("http://localhost:8080/api/create", {
+    // fetch("http://localhost:8080/api/create", {
+    fetch("banking-server-production.up.railway.app/api/create", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),
