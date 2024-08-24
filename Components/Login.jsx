@@ -20,16 +20,16 @@ export default function Login() {
     const email = emailGet.current.value;
     const password = passwordGet.current.value;
 
-    // fetch(
-    //   `http://localhost:8080/api/getByEmail?email=${email}&password=${password}`,
-    //   {
-    //     method: "GET",
-    //   }
-    // )
     fetch(
-      `banking-server-production-70b4.up.railway.app/getByEmail?email=${email}&password=${password}`,
-      { method: "GET" }
+      `http://localhost:8080/api/getByEmail?email=${email}&password=${password}`,
+      {
+        method: "GET",
+      }
     )
+      // fetch(
+      //   `banking-server-production-70b4.up.railway.app/getByEmail?email=${email}&password=${password}`,
+      //   { method: "GET" }
+      // )
       .then((response) => response.json())
       .then((data) => {
         console.log(data, data.id);
