@@ -3,14 +3,12 @@ import { useEffect } from "react";
 import styless from "./Cards.module.css";
 import { MdDeleteForever } from "react-icons/md";
 import Message from "./Message";
-import { Link } from "react-router-dom";
 
 export default function Cards() {
   let [users, setUsers] = useState([]);
 
   useEffect(() => {
-    // fetch("http://localhost:8080/api/getAll", {
-    fetch("banking-server-production.up.railway.app/api/getAll", {
+    fetch("http://localhost:8080/api/getAll", {
       method: "GET",
     })
       .then((response) => response.json())
